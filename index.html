@@ -9,7 +9,52 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
- 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col">
+                <h1>RPS-Multiplayer</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col">
+                <h2>Player 1</h2>
+            </div>
+            <div class="col-sm-6 col">
+                <h2>Player 2</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div id="p1-selection" class="col-sm-6 col">
+                <select>
+                    <option value=""></option>
+                    <option value="Rock">Rock</option>
+                    <option value="Paper">Paper</option>
+                    <option value="Scissors">Scissors</option>
+                </select>
+            </div>
+            <div id="p2-selection" class="col-sm-6 col">
+                <select>
+                    <option value=""></option>
+                    <option value="Rock">Rock</option>
+                    <option value="Paper">Paper</option>
+                    <option value="Scissors">Scissors</option>
+                </select>
+            </div>
+        </div>
+        <div id="battle area" class="row">
+            <div id="p1-pic" class="col-sm-6">
+
+            </div>
+            <div id="p2-pic" class="col-sm-6">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col">
+                <input type="submit" class="btn btn-danger">
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
