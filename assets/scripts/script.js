@@ -1,4 +1,4 @@
-
+var chats = [];
 
 var firebaseConfig = {
     apiKey: "AIzaSyAtzdbfrJPqA8aDo5SMn2h04QrIkTzqzOo",
@@ -59,9 +59,6 @@ var p2Per = 0;
         });
     });
 
-
-console.log(p1Wins);
-
 $('#submit-button').on('click', function() {
     var p1Selection = $('#p1-select').val();
     var p2Selection = $('#p2-select').val();
@@ -118,4 +115,19 @@ database.ref().on("value", function(snapshot) {
 
 $('#reset-button').on('click', function() {
     location.reload();
+});
+
+$('#chat-submit').on('click', function() {
+    $('#chat-display-row').css('display', 'flex');
+    var cText = $('#chat-text-input').val();
+    var cName = $('#chat-name-input').val();
+    // var chatObj = {
+    //     name: cName,
+    //     text: cText
+    // }
+    // chatObj;
+    $('#chat-display-col').append('<h3>' + cName + ': ' + cText + '</h3>');
+    // console.log(chats[0].name);
+    $('#chat-text-input').val("");
+    $('#chat-name-input').val("");
 });
